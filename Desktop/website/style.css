@@ -1,0 +1,632 @@
+/*
+Theme Name: Codify Design Studio
+Description: WordPress theme for corporate website.
+Author: Chris &amp; Kim Converse
+Version: 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,500);
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: #e7e7e7;
+	color: #666;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 2.4em;
+	font-weight: 100;
+	width: 80%;
+	text-align: center;
+	margin: 40px auto 40px auto;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-weight: 300;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 500;
+	color: #000;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: 300;
+}
+
+p {
+	margin: 0px 0px 1em 0px;
+}
+
+a, a:visited {
+	color: #c96d13;
+	transition: color .3s;
+}
+
+a:hover {
+	color: #78c608;
+}
+
+
+
+
+
+
+
+/* homepage */
+
+#homepage .tagline {
+	background-color: #444444;
+	padding: .25em;
+}
+
+#homepage .tagline h2 {
+	color: #ddd;
+}
+
+#homepage .btn {
+	text-align: center;
+}
+
+#homepage .btn a {
+	background-color: #c96d13;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-weight: 700;
+	font-size: .9em;
+}
+
+
+#homepage h3 {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+
+
+
+#homepage .homepage-events {
+	padding: 4em;
+	background-color: #fff;
+}
+#homepage .homepage-events h3 {
+	margin-bottom: 2em;
+}
+#homepage .homepage-events-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.homepage-events .event {
+	border: 1px solid #ddd;
+	width: 28%;
+	margin: 2.5%;
+}
+.homepage-events .event .thumbnail img {
+	width: 100%;
+}
+.homepage-events .event .content {
+	padding: 1em 1em .5em 1em;
+}
+.homepage-events .event .content h4 {
+	margin: 0;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+	#homepage .homepage-events-container {
+		display: block;
+	}
+	.homepage-events .event {
+		width: auto;
+		margin: 0 auto 2em auto;
+		max-width: 500px;
+	}
+}
+@media screen and (max-width: 450px) {
+	#homepage .homepage-events {
+		padding: 2.5em 1.5em;
+	}
+
+}
+
+
+
+
+
+
+
+.clients {
+	text-align: center;
+	padding: 1em 2em;
+}
+
+.clients h3 {
+	margin: 40px 0;
+	font-size: 1.15em;
+	text-transform: uppercase;
+}
+
+.clients p {
+	font-size: .8em;
+	color: #999;
+	margin-top: 30px;
+}
+
+.clients .client_logos {
+	text-align: center;
+}
+
+.clients .client_logos::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.clients .client_logos span {
+	background: url(images/client_spritesheet.png) no-repeat;
+	background-size: 600px 540px;
+	display: inline-block;
+	height: 60px;
+	margin: 15px;
+	width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   */
+
+
+header {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #7d7d7d;
+	position: relative;
+}
+
+header::before {
+	content: '';
+	display: block;
+	height: inherit;
+	background: no-repeat 0 0;
+	background-size: contain;
+	position: absolute;
+	top: 0px;
+}
+
+header {
+	height: 250px;
+	background: url(images/trees_content.jpg) repeat-x center bottom;
+	background-size: 1800px auto;
+}
+
+header::before {
+	width: 250px;
+	background-image: url(images/code_plus_design_m.png);
+	left: 100px;
+}
+
+header h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 15px 15px 8px 15px;
+	position: absolute;
+	top: 0px;
+	right: 15%;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+header a {
+	display: block;
+	width: 150px;
+	height: 73px;
+	font-weight: 500;
+	background: url(images/codify_design_studio.svg) no-repeat 0 0;
+}
+
+header a span {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+article {
+	margin: 90px 115px;
+}
+
+
+
+
+
+
+
+
+.column_container { width: 70%; margin: 30px auto 30px auto; /* border-top: 1px solid #ddd; */ }
+
+
+
+
+
+
+
+
+
+
+.cinemagraphs {
+	background-color: #555;
+	background: url(images/cinemagraph_2510x200.jpg) 0 0;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0px 45px 0px;
+	animation: cinemagraph_background 60s linear infinite;
+	
+}
+.cinemagraphs h3 { font-size: 1.2em; margin: 40px 0px 30px 0px; text-align: center; color: #fff; }
+.cinemagraphs p { font-size: .8em; color: #fff; margin-top: 30px; }
+
+.cinemagraphs a.btn { display: inline-block;  background-color: #df7d2f; border: none; padding: 5px 15px; color: #fff; font-size: 1em; transition: background-color .3s; -webkit-appearance: none; text-decoration: none; }
+.cinemagraphs a.btn:hover { background-color: #84aa1d; }
+
+@keyframes cinemagraph_background {
+	
+	0%   { background-position:     0px 0px; }
+	100% { background-position: -2510px 0px; }
+	
+}
+
+
+.promos {
+	text-align: center;
+}
+
+.promos::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.promos h3 {
+	margin: 40px 0px 40px 0px;
+}
+
+.promos h4 {
+	margin: 0px 0px 10px 0px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.promos aside {
+	width: 50%;
+	float: left;
+}
+
+.promos aside .content {
+	padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.news {
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0px 45px 0px;
+}
+
+.news h5 {
+	color: #fff;
+}
+
+.news p {
+	margin-bottom: 0;
+}
+
+.news form {
+	margin: 15px;
+}
+
+.news form input[type|="email"] {
+	background-color: #ddd;
+	color: #000;
+	border: none;
+	padding: 5px 15px;
+	font-size: 1em;
+	width: 300px;
+	margin: 20px 0px 20px 0px;
+}
+
+.news form input[type|="submit"] {
+	background-color: #df7d2f;
+	border: none;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 1em;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	transition: background-color .3s;
+	-webkit-appearance: none;
+}
+
+.news form input[type|="submit"]:hover {
+	background-color: #84aa1d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	border-top: 1px solid #eee;
+	font-size: .8em;
+	margin: 70px 0px 30px 0px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+
+
+/* post_single */
+
+.post_single h2 { margin: 0 0 2em 0; text-align: left; }
+
+
+
+
+
+
+
+
+
+
+/* events */
+
+article.events {
+	margin: 4em auto;
+	max-width: 1200px;
+	padding: 0 2em;
+}
+article.events .title {
+	text-align: center;
+}
+article.events .title h1 {
+	font-size: 2.4rem;
+	font-weight: 400;
+	margin: 0 0 1rem 0;
+}
+article.events * + h2 {
+	margin-top: 4em;
+}
+article.events .title p {
+	font-size: 1.3rem;
+}
+
+.event_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.event_container .event {
+	background-color: #fff;
+	box-shadow: 0 0 4px rgba(0,0,0,.25);
+	display: flex;
+	flex-direction: column;
+	margin: 2% 1%;
+	min-width: 240px;
+}
+.event_container .event h2 {
+	text-align: left;
+	margin: 0;
+	color: #000;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+.event_container .event .thumbnail {
+	position: relative;
+	overflow: hidden;
+}
+.event_container .event .thumbnail::before {
+	content: '';
+	display: block;
+	padding-top: 56.25%;
+}
+.event_container .event .thumbnail a {
+	display: block;
+	overflow: hidden;
+}
+.event_container .event .thumbnail img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: transform .25s ease-in-out;
+}
+.event_container .event .thumbnail a:hover img {
+	transform: scale(1.1);
+}
+.event_container .event .content {
+	padding: 10px 15px;
+	flex: 1;
+}
+.event_container .event .hosts {
+	border-top: 1px solid #eee;
+	padding: 10px 15px;
+}
+.event_container .event .hosts > div {
+	display: flex;
+}
+.event_container .event .hosts > div > div:nth-child(1) {
+	width: 75px;
+	font-size: .8rem;
+	font-style: italic;
+	color: #999;
+	padding-right: 10px;
+	text-align: right;
+}
+.event_container .event .hosts > div > div:nth-child(2) {
+	flex: 1;
+}
+.event_container a.btn {
+	border-radius: 30px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	padding: 4px 18px;
+	text-decoration: none;
+	color: #777;
+	font-size: .9rem;
+}
+
+
+/* upcoming events */
+.event_container.upcoming .event {
+	width: 44%;
+}
+
+
+/* past events */
+.event_container.past .event {
+	width: 20%;
+}
+.event_container.past .event h2 {
+	font-size: 1.1rem;
+}
+.event_container.past .event .content > div {
+	overflow: hidden;
+	height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1300px) {
+	h2 { font-size: 2.1em; width: 80%; }
+
+	header.home { height: 500px; background-image: url(images/trees_1800.jpg); }
+	header.home::before { width: 275px; background-image: url(images/code_plus_design_l.png); left: 18%; }
+}
+
+@media screen and (max-width: 1299px) {
+	h2 { font-size: 2em; width: 80%; }
+	header.home { height: 400px; background-image: url(images/trees_1800.jpg); }
+	header.home::before { width: 275px; background-image: url(images/code_plus_design_l.png); left: 18%; }
+}
+
+@media screen and (max-width: 1190px) {
+	h2 { font-size: 1.9em; width: 80%; }
+	header.home { height: 400px; }
+}
+
+@media screen and (max-width: 1024px) {
+	h2 { font-size: 1.9em; width: 90%; }
+	header.home { height: 400px; }
+}
+
+@media screen and (max-width: 899px) {
+	h2 { font-size: 1.8em; width: 80%; }
+	header h1 { right: 12%; }
+	header a { width: 140px; height: 63px; }	
+	header.home { height: 500px; background-image: url(images/trees_1200.jpg); }
+	header.home::before { width: 250px; background-image: url(images/code_plus_design_m.png); }
+	.promos aside .content { padding: 0px 10px; }
+}
+
+@media screen and (max-width: 736px) {
+	h2 { font-size: 1.7em; width: 80%; }
+	h4 { font-size: 1em; font-weight: 500; color: #000; }
+}
+
+@media screen and (max-width: 668px) {
+	h2 { font-size: 1.5em; width: 80%; }
+	header a { width: 130px; height: 53px; }
+	header.home { height: 400px; }
+	header.home::before { left: 12%; }
+	.column_container { width: auto; padding: 0px 20px; }
+	.promos h3 { margin: 20px 0px 20px 0px; }
+	.promos h4 { margin: 10px 0px 5px 0px;; }
+	.promos aside { width: 100%; float: none; margin: 40px 0px; }
+	.promos aside br { display: none; }
+	.promos aside .content { padding: 0px; }
+	.news p { padding: 0px 30px; }
+	.clients { padding: 0px 30px; }
+}
+
+@media screen and (max-width: 520px) {
+	h2 { font-size: 1.3em; font-weight: 100; width: 80%; margin: 20px auto 20px auto;}
+	header h1 { right: 6%; }
+	header.home { height: 300px; background-image: url(images/trees_800.jpg); }	
+	.promos h3 { margin: 20px 0px 20px 0px; }
+	.promos h4 { margin: 10px 0px 5px 0px;; }
+	.promos aside .content { padding: 0px; }
+	.clients { padding: 0px 10px; }
+	/* 	.clients .client_logos span { width: 86px; height: 52px; } */
+}
+
+@media screen and (max-width: 415px) {
+	h2 { font-size: 1.3em; font-weight: 300; }
+	header h1 { top: 20px; right: 0px; padding-right: 12px; }
+	header a { width: 120px; height: 49px; }
+	header.home { height: 200px; background-image: url(images/trees_600.jpg); }
+	header.home::before { width: 135px; background-image: url(images/code_plus_design_s.png); left: 8%; }
+	.promos h3 { margin: 20px 0px 20px 0px; }
+	.promos h4 { margin: 10px 0px 5px 0px; }
+	.promos aside .content { padding: 0px; }
+	.news form input[type|="email"] { width: 70%; }
+}
